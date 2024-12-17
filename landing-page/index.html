@@ -6,41 +6,45 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="/landing-page/assets/css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Andada+Pro:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="div-container">
+        <div class="div-container-row" id="header-div">
             <div class="logo-container">
                 <!-- free to use image -->
-                <img src="/landing-page/assets/images/logo.jpg" alt="ai generated logo">
+                <img class="thumbnail" id="logo" src="/landing-page/assets/images/logo.jpg" alt="ai generated logo">
             </div>
             <div class="nav-div">
-                <ul>
-                    <li id="sec-1" href="#about"><a>About</a></li>
-                    <li id="sec-2" href="#projects"><a>Projects</a></li>
+                <ul class="nav-bar">
+                    <li><a id="sec-1" href="#about">About</a></li>
+                    <li><a id="sec-2" href="#projects">Projects</a></li>
                 </ul>
             </div>
         </div>
-        <div class="div-container">
-            <div class="welcome">
-                <h1>CHARLOTTE GALE</h1>
-                <p>
-                    Welcome to my portfolio website.<br>
-                    Make yourself comfortable and have a good look around.
-                </p>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/CharlotteGale" target="_blank"><i class="fab fa-github"></i></a> 
-                <a href="https://linkedin.com/in/charlottemgale" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
-                <a href="mailto:CharlotteMGale@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <div class="div-container-row" id="social-div">
+            <div class="div-container-column">
+                <div class="welcome">
+                    <h1>CHARLOTTE GALE</h1>
+                    <p>
+                        Welcome to my portfolio website.<br>
+                        Make yourself comfortable and have a good look around.
+                    </p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/CharlotteGale" target="_blank"><i class="fab fa-github"></i></a> 
+                    <a href="https://linkedin.com/in/charlottemgale" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
+                    <a href="mailto:CharlotteMGale@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
             <div class="image-container">
-                <img src="/landing-page/assets/images/funky-logo.png" alt="ai generated image using my intials and developer keywords">
+                <img class="gap-filler" src="/landing-page/assets/images/funky-logo.png" alt="ai generated image using my intials and developer keywords">
             </div>
         </div>
+
     </header>
-    <section>
-        <div class="div-container">
+    <section class="section1">
+        <div class="div-container-column">
             <!-- h2, p about me spiel -->
             <h2 id="about">ABOUT ME</h2>
             <p>
@@ -59,32 +63,34 @@
             </p>
         </div>
     </section>
-    <section>
-        <div class="div-container">
+    <section class="section2">
+        <div class="div-container-column">
             <!-- h2, thumbnails w descriptions -->
             <h2 id="projects">MY PROJECTS</h2>
-            <div class="thumbnail-container">
-                <div id="text-game">
+            <div class="div-container-row" id="thumbnail-div">
+                <div class="project-thumbnail" id="text-game">
                     <img class="thumbnail" src="/landing-page/assets/images/text-adventure.png" alt="home page for text adventure game">
                     <p>A simple text-based adventure game, inspired by D&D. Built using HTML, CSS & JavaScript</p>
                 </div>
-                <div id="web-app">
+                <div class="project-thumbnail" id="web-app">
                     <img class="thumbnail" src="/landing-page/assets/images/chakraX-homePage.png" alt="home page for web-app">
                     <p>A collaborative team assignment to design a web-app.<br> 
                         Team of 6 built a fully functional web-app geared towards neurodiverse users, I tackled the backend.<br> 
                         Built using MySQL, Expressjs, React & Nodejs as primary techstack.</p>
                 </div>
-                <div id="quiz">
+                <div class="project-thumbnail" id="quiz">
                     <img class="thumbnail" src="/landing-page/assets/images/hp-quiz.png" alt="landing page for HP quiz">
                     <p>An interactive Harry Potter Quiz. Built using JavaScript, HTML & CSS.</p>
                 </div>
-                <div id="api">
+                <div class="project-thumbnail" id="api">
                     <img class="thumbnail" src="/landing-page/assets/images/dnd-api.png" src="basic search page for D&D api">
                     <p>An API built using D&D data available on the web, for a learning assignment. Built using MySQL, Expressjs & Nodejs.</p>
                 </div>
              </div>
         </div>
     </section>
-
+    <footer>
+        <p><i>This website was built and designed by Charlotte Gale.</i></p>
+    </footer>
 </body>
 </html>
