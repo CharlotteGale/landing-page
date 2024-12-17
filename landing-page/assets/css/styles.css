@@ -1,0 +1,103 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 20px;
+    color: rgb(227, 231, 229);
+}
+header {
+    background-color: rgb(9, 9, 43);
+    padding: 20px;
+}
+h1, h2 {
+    font-family: "Andada Pro", sans-serif;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+li {
+    text-decoration: none;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background-color: rgb(215, 215, 230);
+    color: rgb(2, 2, 20);
+    text-align: center;
+}
+.section1, 
+.section2 {
+    padding: 10px;
+}
+.section1 {
+    background-color: rgb(29, 29, 126);
+}
+.section2 {
+    background-color: rgb(114, 114, 207);
+}
+.div-container-row,
+.nav-div,
+.social-links,
+#thumbnail-div {
+    display: flex;
+    flex-direction: row;
+}
+.div-container-column,
+.project-thumbnail {
+    display: flex;
+    flex-direction: column;
+}
+.nav-div {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+.thumbnail {
+    width: 100px;
+}
+.gap-filler {
+    width: 200px;
+}
+#header-div,
+#social-div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo-container {
+    flex: 1;
+}
+.social-links {
+    width: 100%;
+    justify-content: space-evenly;
+}
+#thumbnail-div {
+    gap: 20px;
+}
+#thumbnail-div .project-thumbnail {
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    max-width: 30%;
+    text-align: justify;
+    font-size: 0.8em;
+}
